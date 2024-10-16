@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huggy Wuggies</title> 
+    <style>
+
+
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #e8bedc;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #bf9db5;
+            color: black;
+        }
+        .right {
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <style>
+        
+        .hero {
+            position: relative;
+            background-image: url('https://www.daisyandhen.com.au/cdn/shop/files/IMG_0929_c5698b51-55c4-4772-a482-95e2f5087b4a.jpg?v=1709254333&width=2400'); 
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+        .promo-bar {
+            background-color: #fadef2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .top-border {
+            width: 100%;
+            height: 5px;
+            background-color: #edd1e9;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            text-align: center;
+        }
+        .image-container img {
+            margin: 10px; 
+            border: 5px solid #f0d5e8;
+            border-radius: 10px;
+            max-width: 300px; 
+            height: auto;
+        }
+
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-item {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+        .product-name {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .product-price {
+            font-size: 1rem;
+            color: #666;
+        }
+        .Add-to-Cart button {  
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            opacity: 0.8; 
+        }
+    </style>
+</head>
+<body>
+
+ 
+<div class="navbar">
+    <a href="#home">New</a>
+    <a href="#bestseller">BestSeller</a>
+    <a href="#shop">Shop</a>
+    <div class="right">
+    <a href="#login">Login</a>
+         <a href="#signup">Signup</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Huggy Wuggies</h1>
+</div>
+<div class="promo-bar">
+    FREE SHIPPING WHEN YOU BUY OVER ₱2000
+</div>
+
+<div class="top-border"></div>
+<div class="image-container">
+    <img src="https://kidsliving.co.za/cdn/shop/products/BAS3GN_1000x.jpg?v=1626265191" alt="Image 1">
+    <img src="https://images.unsplash.com/photo-1512331462842-60f23e3f5647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc4MzR8MHwxfGFsbHwxfHx8fHx8fHwxNjI5MjMxMzY5&ixlib=rb-1.2.1&q=80&w=400" alt="Image 2">
+    <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/2560w/products/3944/109868/BARM3BAT__06138.1.jpg" alt="Image 3">
+    <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3749/108521/BARM2BST__85452.1712643428.jpg?c=1" alt="Image 4">
+</div>
+
+<script>
+function addToCart() {
+    alert("Item added to cart!"); 
+}
+</script>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img src="https://standun.com/cdn/shop/files/A2CRON.jpg?v=1705045905" alt="Ordinary Croissant">
+        <div class="product-name">Ordinary Croissant</div>
+        <div class="product-price">₱ 2,400</div> 
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://cdn11.bigcommerce.com/s-23s5gfmhr7/images/stencil/1000w/products/237/34937/A6PE__40929.1714752154.jpg?c=1" alt="Peanut Butter">
+        <div class="product-name">Peanut Butter</div>
+        <div class="product-price">₱ 1,200</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://dillydallykids.ca/cdn/shop/products/Jellycatminifossillystegosaurus.jpg?v=1627576133&width=1000" alt="Mini Stegosaurus">
+        <div class="product-name">Mini Stegosaurus</div>
+        <div class="product-price">₱ 2,800</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://milkandhoney.ph/22723-large_default/jellycat-bashful-snow-tiger-medium.jpg" alt="Snow Tiger">
+        <div class="product-name">Snow Tiger</div>
+        <div class="product-price">₱ 2,100</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/714XGeR82CL._AC_UF894,1000_QL80_.jpg" alt="Leo Lion">
+        <div class="product-name">Leo Lion</div>
+        <div class="product-price">₱ 3,200</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3662/103333/HA2PCL__20145.1712532098.jpg?c=1" alt="Panda Express">
+        <div class="product-name">Panda Express</div>
+        <div class="product-price">₱ 3,400</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://cdn11.bigcommerce.com/s-23s5gfmhr7/images/stencil/2560w/products/1566/40226/WW3L__60001.1.jpg" alt="Sharky">
+        <div class="product-name">Wallie Whale</div>
+        <div class="product-price">₱ 2,500</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+        <img src="https://www.biscuit-home.com/cdn/shop/files/JellycatBashfulChristmasBunny_800x.png?v=1706037929" alt="Cream Bunny">
+        <div class="product-name">Christmas Cream Bunny</div>
+        <div class="product-price">₱ 3,500</div>
+        <button class="Add-to-Cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+<body>
+    <div class="form-container">
+        <h2>Contact Us!</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="text" name="address" placeholder="Your Address">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+</style>
+</div>
+
+<div class="wrapper"} >
+<form action="">
+    <h1>Login</h1>
+    
+    <div class="input-box">
+        <input type="text" placeholder="Username"required>
+
+        <div class="input-box">
+        <input type="password" placeholder="Username"required> 
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password?</a></div>
+            <button type="Submit" class="btn">Login</button>
+            <div class="register link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+
